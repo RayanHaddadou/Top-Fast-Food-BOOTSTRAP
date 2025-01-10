@@ -126,7 +126,7 @@ function editModal(restaurantId) {
     fetch("./form.html").then((data) => {
         data.text().then((form) => {
             const selectedrestaurant = restaurantList[result];
-            modifyModal("Edit Mode", form);
+            modifyModal("Modification des informations", form);
             modifyFom({
                 restaurant: selectedrestaurant.restaurant,
                 specialite: selectedrestaurant.specialite,
